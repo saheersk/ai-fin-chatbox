@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  postgres_chatbox_service:
+      image: postgres:16
+      container_name: postgres_chatbox_container
+      environment:
+          POSTGRES_DB: chatbox_db
+          POSTGRES_USER: chatbox
+          POSTGRES_PASSWORD: chatbox123
+      volumes:
+          - postgres_chatbox_data:/var/lib/postgresql/data
+
+  chatbox-service:
+    build:
+        context: ./backend/chatbox
+        dockerfile: Dockerfile
+    image: backend:chatbox-service
+    container_name: chatbox-service
+    command: sh -c "chmod +x ./migrate.sh && chmod +x ./entrypoint.sh && sh ./migrate.sh && ./entrypoint.sh"
+    ports:
+        - 8000:8000
+    env_file:
+        - ./backend/chatbox/.env
+    volumes:
+        - ./backend/chatbox:/chatbox-service
+    depends_on:
+        - postgres_chatbox_service
+
+volumes:
+    postgres_chatbox_data:

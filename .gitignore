@@ -1,0 +1,197 @@
+.DS_Store
+node_modules
+.turbo
+*.log
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist
+
+# Ignore node_modules directory at the root
+node_modules/
+
+# Ignore virtual environment or dependencies for Python backend
+venv/
+__pycache__/
+
+# Ignore compiled binaries or build artifacts
+*.pyc
+*.pyo
+*.pyd
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore compiled JavaScript or TypeScript files
+*.js
+*.js.map
+*.d.ts
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore any environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore logs and other runtime files
+logs/
+*.log
+
+# Ignore build artifacts and dependencies
+/build/
+/dist/
+/node_modules/
+
+# Node.js
+node_modules/
+
+# Vite
+/dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor
+*.swp
+*.swo
+.DS_Store
+
+# Build
+/dist/
+/build/
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+db.sqlite3
+media/
+
+# Static files
+/static/
+
+# Virtual environment
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.iws.xml
+*.ipr
+*.ids
+*.orig
+
+# Pycache
+__pycache__/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled python modules
+*.pyc
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
+db.sqlite3
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.iws.xml
+*.ipr
+*.ids
+*.orig
+
+# Pycache
+__pycache__/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.iws.xml
+*.ipr
+*.ids
+*.orig
+
+# Pycache
+__pycache__/
